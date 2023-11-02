@@ -1,10 +1,8 @@
-import {
-  Adviser,
-  Fighter,
-  King,
-  Squire,
-} from '../../../models/character';
-
+import { /* Category, */ Fighter } from '../models/character';
+import { King } from '../models/character';
+import { Squire } from '../models/character';
+import { Adviser } from '../models/character';
+import '../../main.css';
 export type AnyCharacter = Fighter | King | Adviser | Squire;
 
 type Props = {
@@ -33,6 +31,18 @@ export function Card({ character }: Props) {
     }
   };
 
+  // function makEmoji(category: Category) {
+  //   switch (category) {
+  //     case 'king':
+  //       return '👑';
+  //     case 'fighter':
+  //       return '🗡';
+  //     case 'adviser':
+  //       return '🎓';
+  //     default:
+  //       return '🛡';
+  //   }
+  // }
 
   return (
     <li className="character col">
@@ -65,6 +75,7 @@ export function Card({ character }: Props) {
             </div>
           </div>
         </div>
+        {/* /* <i className="emoji">{makEmoji(character.category)}</i> */} 
       </div>
       ;
     </li>

@@ -1,4 +1,4 @@
-import { AnyCharacter, Card } from '../card/card';
+import { AnyCharacter, Card } from '../../../card/card';
 
 type Props = {
   children: AnyCharacter[];
