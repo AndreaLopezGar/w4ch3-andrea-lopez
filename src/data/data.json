@@ -1,3 +1,7 @@
+import { Character } from '../types/gentleman';
+
+export const gentleman: GentlemanType[]
+
 [
   {
     "isAlive": true,
